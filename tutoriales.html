@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Services</title>
+    <link rel="stylesheet" href="ia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+    <header>
+        <div class="aws">
+            <a href="index.html"><img src="images/logoaws2.png" alt=""></a>
+            <div class="logo" >Serivces.</div>
+        </div>
+        
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="services.html">Servicios</a></li>
+              <li><a href="certificaciones.html">Certificaciones</a></li>
+              <li><a href="bloc.html">Bloc</a></li>
+              <li><a href="tutoriales.html">Tutoriales</a></li>  
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    
+
+
+     <!-- <div class="card-container">
+        <div class="credit-card"> 
+          <div class="circle1"></div> 
+          <div class="circle2"></div> 
+          <div class="head"> 
+              <div class="icon-aws"> 
+                  <i class="fab fa-aws"></i> 
+              </div> 
+              <div>Amazon Web Services</div> 
+          </div> 
+          <div class="number"> 
+              <div>1234</div> 
+              <div>5678</div> 
+              <div>9123</div> 
+              <div>4567</div> 
+          </div> 
+          <div class="tail"> 
+              <div>Vikas Maur</div> 
+              <div class="exp">Exp:  
+                <span class="exp-date">12/26</span> 
+                </div> 
+          </div> 
+        </div>
+      </div> -->
+
+      <div class="tutorials-section">
+        <h1>Tutoriales</h1>
+        <div class="tutorial-grid">
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/74e1asRdR7k?si=xiEg7G_ywE4361O3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>Amazon Elasitc Compute Cloud (EC2)</h2>
+                    <p>Lanzamiento, configuración, conexión y uso de una instancia EC2</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>Amazon Simple Storage Service (S3)</h2>
+                    <p>Conceptos básicos de Amazon/AWS S3 (Simple Storage Service) | Tutorial de S3, Creación de un bucket</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mDRoyPFJvlU?si=NR3eQ1cKSbSrMu9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8OuZ-3efisI?si=MBPwd7BU9Rvhz9_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>Amazon Relational Database Services (RDS)</h2>
+                    <p>Tutorial de AWS RDS para principiantes 2022: tutorial práctico</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>Amazon Lambda</h2>
+                    <p>Introducción a AWS Lambda y aplicaciones sin servidor</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EBSdyoO3goc?si=p2HFDUFZtRi2vSuq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ApGz8tpNLgo?si=aKPN_s3QgiKdKmZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>Amazon Virtual Private Cloud (VPC)</h2>
+                    <p>Cómo crear una VPC de AWS con subredes públicas y privadas</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>Amazon DynamoDB</h2>
+                    <p>Aprende que es Amazon DynamoDB, y como utilizarlo</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2k2GINpO308?si=qH3IUjA2cEJhk_c6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iF9fs8Rw4Uo?si=lqfbiMQoSbjVhV09" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>AWS Identity and Access Management (IAM)</h2>
+                    <p>Descubre los Conceptos básicos de AWS Identity and Access Management (IAM)</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>Amazon Elastic Container Service</h2>
+                    <p>Aprende que es Amazon ECS, y como utilizarlo.</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/46mFdtpy3NQ?si=LnypW_sdt00ORu_S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/whR4J5Arj78?si=fBNSAZY8tcNjA_xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>Amazon Athena</h2>
+                    <p>Tutorial completo sobre Amazon Athena, aprende sobre el servicio de Athena, y como utilizarlo.</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>AWS CloudFormation</h2>
+                    <p>Tutorial para principiantes sobre AWS CloudFormation</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t97jZch4lMY?si=0TQJCW1gWnT_RvX6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="tutorial odd">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uxTpTU1FZzo?si=FytOR0Mk974Txus6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divider-tuto"></div>
+                <div class="tutorial-info">
+                    <h2>AWS Cloud Adoption Framework (CAF)</h2>
+                    <p>Tutorial completo sobre Amazon Athena, aprende sobre el servicio de Athena, y como utilizarlo.</p>
+                </div>
+            </div>
+            <div class="tutorial even">
+                <div class="tutorial-info">
+                    <h2>AWS Well Architected Framework (WAF)</h2>
+                    <p>Conceptos básicos de Amazon/AWS S3 (Simple Storage Service) | Tutorial de S3, Creación de un depósito | AWS para principiantes</p>
+                </div>
+                <div class="divider-tuto"></div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jvVY1FDWgkA?si=mqjxjmPQEMJepL8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100088579052568" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/detodofut_tw" target="_blank"><i class="fa-solid fa-x"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-sansberro-pereyra-a50a1329a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="certificaciones.html">Certificaciones</a></li>
+                    <li><a href="bloc.html">Bloc</a></li>
+                    <li><a href="tutoriales.html">tutoriales</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p> <span class="designer">Juan Sansberro</span></p>
+        </div>
+    </footer>
+
+
+    <script src="ia.js">
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+    </script>
+</body>
+</html>

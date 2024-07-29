@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Services</title>
+    <link rel="stylesheet" href="ia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body class="inicio">
+    <header>
+        <div class="aws">
+            <a href="index.html"><img src="images/logoaws2.png" alt=""></a>
+            <div class="logo">Services.</div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="certificaciones.html">Certificaciones</a></li>
+                <li><a href="bloc.html">Bloc</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>  
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </header>
+    
+    <!-- <div class="container-container">
+        <div class="left">
+            <h1>AWS Services</h1>
+            <p>Esta es una página web sobre todo lo que necesitas saber sobre Amazon Web Services (AWS), como para empezar a adentrarte de lleno en el mundo del cloud computing</p>
+            <div class="author">by: Juan Sansberro</div>
+        </div>
+        <div class="right">
+            <img src="ima/aws-aws.png" alt="">
+        </div>
+        
+    </div> -->
+ 
+     <section class="fondo-primer">
+        <div class="primer-container">
+            <div class="texto-container">
+                <h1>¿Qué Es Amazon Web Services (AWS)?</h1>
+                <p>Amazon Web Services (AWS) es una plataforma integral de servicios de computación en la nube proporcionada por Amazon. AWS ofrece una amplia gama de servicios que permiten a las empresas y desarrolladores almacenar datos, procesar información, gestionar bases de datos, desplegar aplicaciones y mucho más, sin necesidad de invertir en infraestructura física.</p>
+                <a href="https://aws.amazon.com/es/getting-started/" target="_blank"><button class="amazon-button">Amazon Web Services</button></a>
+            </div>
+            <div class="imagen-container">
+                <img src="ima/amazon-aws-img-2.jpg" alt="AWS Amplify">
+            </div>
+        </div>
+     </section>
+    
+    
+     <div class="section images-section">
+        <h1 class="titulo">Modelos de Implementación de TI</h1>
+        <div> 
+            <a href="javascript:void(0);" class="images-link" data-title="AWS Cloud"
+               data-description="Una aplicación basada en la nube se encuentra implementada totalmente en la nube, de modo que todas las partes de la aplicación se ejecutan en esta. Las aplicaciones en la nube se han creado directamente en la nube o se han transferido de la infraestructura existente para aprovechar los beneficios de la computación en la nube. Las aplicaciones basadas en la nube se pueden construir en partes de infraestructura de bajo nivel o pueden utilizar servicios de nivel superior que proporcionan abstracción de los requisitos de administración, arquitectura y escalado de la infraestructura principal."
+               data-features=""
+               data-image="img/cloud.png" onclick="showDetails(this)">
+                <img src="img/cloud.png" alt="Cloud">
+                <h3 class="images-title">Cloud</h3>
+    
+            </a>   
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="images-link" data-title="Hybrid Cloud"
+               data-description="Una implementación híbrida es una manera de conectar la infraestructura y las aplicaciones entre los recursos basados en la nube y los recursos existentes que no se encuentran en la nube. El método más común de implementación híbrida consiste en conectar la nube y la infraestructura existente en las instalaciones para ampliar e incrementar la infraestructura de la organización en la nube al mismo tiempo que se conectan estos recursos en la nube con el sistema interno."
+               data-features="Flexibilidad, Control, Escalabilidad, Seguridad"
+               data-image="img/hybrid.png" onclick="showDetails(this)">
+               
+                <img src="img/hybrid.png" alt="Hybrid Cloud">
+                <h3 class="images-title">Hybrid Cloud</h3>
+            </a>
+            
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="images-link" data-title="On-Premises"
+               data-description="La implementación de recursos en las instalaciones, mediante la virtualización y la provisión de herramientas de gestión de recursos, no ofrece muchas de las ventajas de la computación en la nube, pero a veces se busca por su capacidad de proporcionar recursos dedicados. En la mayoría de los casos, este modelo de implementación es idéntico al de la infraestructura de TI antigua, mientras que utiliza tecnologías de virtualización y administración de aplicaciones para intentar incrementar el uso de los recursos."
+               data-features="Control Total, Seguridad, Personalización, Costos Fijos"
+               data-image="img/on-premises.png" onclick="showDetails(this)">
+                <img src="img/on-premises.png" alt="On-Premises">
+                <h3 class="images-title">On-Premises</h3>
+            </a>
+            
+        </div>
+    </div>
+
+     <!-- Sección de detalles de imagen -->
+     <div id="image-details" class="image-details hidden">
+        <span class="close" onclick="hideDetails()">&times;</span>
+        <div class="details-content">
+            <div class="details-header">
+                <img id="detail-image" src="" alt="Imagen Detalle">
+                <h2 id="detail-title"></h2>
+            </div>
+            <p id="detail-description"></p>
+            <p id="detail-features"></p>
+        </div>
+    </div>
+
+    <div class="conteiner">
+        <div class="image-box">
+            <h4 class="image-title">Beneficios de usar la nube de AWS <span class="flechita">⇛</span></h4>
+            <img class="image-border" src="ima/fondo-5.jpg" alt="">
+        </div>
+        <div class="divider"></div>
+        <div class="text-box">
+            <div class="text-item">
+                <img src="img/Facilidad de uso.png" alt="">
+                <p><span>Facilidad de uso:</span> AWS permite a proveedores de aplicaciones, software y distribuidores hospedar aplicaciones de manera rápida y segura, ya sean nuevas o existentes basadas en SaaS. Puede acceder a la plataforma de hospedaje de AWS mediante la consola de administración o las API de servicio web bien documentadas.</p>
+            </div>
+            <div class="text-item">
+                <img src="img/Flexible.png" alt="">
+                <p><span>Flexible:</span> AWS le permite seleccionar el sistema operativo, el lenguaje de programación, la plataforma web, la base de datos y otros servicios necesarios. Con AWS, puede cargar el software y servicios que su aplicación requiere en un entorno virtual, facilitando la migración de aplicaciones existentes y la creación de nuevas soluciones.</p>
+            </div>
+            <div class="text-item">
+                <img src="img/Escalabilidad.png" alt="">
+                <p><span>Escalabilidad y alto desempeño:</span> Con las herramientas de AWS, Auto Scaling y Elastic Load Balancing, su aplicación podrá ampliarse o reducirse según la demanda. Gracias al respaldo de la sólida infraestructura de Amazon, tendrá acceso a los recursos informáticos y de almacenamiento siempre que los necesite.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="rigth-container">
+        <div class="image-right">
+            <img src="ima/global-aws.png" alt="">
+        </div>
+        <div class="text-right-container">
+            <h5>Mapa de la Infraestructura global de AWS</h5>
+            <p>La nube de AWS abarca 105 zonas de disponibilidad en 33 regiones geográficas, con el anuncio de que existen planes para crear 21 zonas de disponibilidad más y 7 regiones de AWS más en Malasia, México, Nueva Zelanda, el Reino de Arabia Saudí, Tailandia, Taiwán y la nube soberana europea de AWS.</p>
+        </div>
+    </section>
+
+    <div class="conteiner-carrusel">
+        <h2>Servicios más populares de AWS</h2>
+        <div class="carrusel">
+            <div class="elemento"><img class="ec2" src="img/EC2.png" alt=""><a href="https://docs.aws.amazon.com/ec2/" target="_blank"><h6>EC2</h6></a></div>
+            <div class="elemento"><img class="s3" src="img/s3.png" alt=""><a href="https://docs.aws.amazon.com/s3/" target="_blank"><h6>S3</h6></a></div>
+            <div class="elemento"><img class="rds" src="img/rds.png" alt=""><a href="https://docs.aws.amazon.com/es_es/AmazonRDS/latest/UserGuide/Welcome.html" target="_blank"><h6>RDS</h6></a></div>
+            <div class="elemento"><img class="lambda" src="img/lambda.png" alt=""><a href="https://docs.aws.amazon.com/lambda/" target="_blank"><h6>Lambda</h6></a></div>
+            <div class="elemento"><img class="vpc" src="img/VPC.png" alt=""><a href="https://docs.aws.amazon.com/vpc/" target="_blank"><h6>VPC</h6></a></div>
+            <div class="elemento"><img class="dynamodb" src="img/dynamodb.png" alt=""><a href="https://docs.aws.amazon.com/es_es/amazondynamodb/latest/developerguide/Introduction.html" target="_blank"><h6>DynamoDB</h6></a></div>
+            <div class="elemento"><img class="cloudfront" src="img/cloudfront.png" alt=""><a href="https://docs.aws.amazon.com/cloudfront/" target="_blank"><h6>CloudFront</h6></a></div>
+            <div class="elemento"><img class="sqs" src="img/sqs.png" alt=""><a href="https://docs.aws.amazon.com/es_es/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html" target="_blank"><h6>SQS</h6></a></div>
+            <div class="elemento"><img class="redshift" src="img/redshift.png" alt=""><a href="https://docs.aws.amazon.com/es_es/redshift/latest/mgmt/welcome.html" target="_blank"><h6>Redshift</h6></a></div>
+            <div class="elemento"><img class="elastic-beanstalk" src="img/elastic-beanstalk.svg" alt=""><a href="https://docs.aws.amazon.com/elastic-beanstalk/" target="_blank"><h6>Elastic Beanstalk</h6></a></div>
+        </div>
+    </div>
+    
+    <section class="rigth-container">
+        <div class="text-left-container">
+            <h5>La Historia de AWS</h5>
+            <p>Amazon Web Services (AWS) se lanzó en 2006, comenzando con servicios clave como Amazon S3 y EC2. Desde entonces, AWS ha crecido exponencialmente, ofreciendo cientos de servicios en la nube a millones de clientes globales. Hoy, AWS es la plataforma en la nube más adoptada del mundo, impulsando la innovación en áreas como inteligencia artificial y aprendizaje automático.</p>
+        </div>
+        <div class="image-right">
+            <img src="ima/history.jpg" alt="">
+        </div>
+    </section>
+    
+    <h2 class="section-title">Modelos de computación en la nube</h2>
+    <section class="services-container">
+        <div class="section images-sections">
+            <div>
+                <a href="javascript:void(0);" class="images-link-2" data-title="Infraestructura como servicio (IaaS)"
+               data-description="La IaaS incluye los bloques de creación básicos para la TI basada en la nube. Generalmente, provee acceso a características de conexión en red, equipos (virtuales o en hardware exclusivo) y espacio de almacenamiento de datos. La IaaS le ofrece el mayor nivel de flexibilidad y control de administración en relación con sus recursos de TI. Es similar a los recursos de TI que muchos desarrolladores y departamentos de TI ya conocen. "
+               data-features=""
+               data-image="img/IaaS.png" onclick="showDetails(this)">
+                <img src="img/IaaS.png" alt="Cloud">
+                <h3 class="images-title-2">IaaS</h3>
+            </a>
+            
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="images-link-2" data-title="Plataforma como servicio (PaaS)"
+               data-description="La PaaS elimina la necesidad de administrar la infraestructura subyacente (normalmente hardware y sistemas operativos) y permite enfocarse en la implementación y administración de aplicaciones. Esto contribuye a mejorar el nivel de eficiencia, ya que no debe preocuparse por el aprovisionamiento de recursos, la planificación de la capacidad, el mantenimiento del software, la implementación de parches ni ninguna de las demás arduas tareas que conlleva la ejecución de su aplicación. "
+               data-features="Flexibilidad, Control, Escalabilidad, Seguridad"
+               data-image="img/PaaS.png" onclick="showDetails(this)">
+                <img src="img/PaaS.png" alt="Hybrid Cloud">
+                <h3 class="images-title-2">PaaS</h3>
+            </a>
+            
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="images-link-2" data-title="Software como servicio (SaaS)"
+               data-description="El SaaS le proporciona un producto completo que el proveedor del servicio ejecuta y administra. En la mayoría de los casos, quienes hablan de SaaS en realidad se refieren a aplicaciones de usuario final (como el email basado en la Web). Con una solución basada en SaaS, ya no debe pensar en cómo mantener el servicio ni en cómo administrar la infraestructura subyacente. Solamente debe pensar en cómo utilizar ese software en particular. "
+               data-features="Flexibilidad, Control, Escalabilidad, Seguridad"
+               data-image="img/SaaS.png" onclick="showDetails(this)">
+                <img src="img/SaaS.png" alt="Hybrid Cloud">
+                <h3 class="images-title-2">SaaS</h3>
+            </a>
+            
+        </div>
+        <div>
+            <a href="javascript:void(0);" class="images-link-2" data-title="Función como servicio (FaaS)"
+               data-description="Function as a Service (FaaS) es un tipo de computación en la nube que permite ejecutar fragmentos de código (funciones) en respuesta a eventos específicos, como solicitudes HTTP, cambios en datos, o mensajes en colas. Con FaaS, el código se ejecuta de manera efímera, es decir, solo cuando se activa por un evento y se escala automáticamente según la demanda. Los proveedores de FaaS se encargan de gestionar los recursos necesarios, como servidores y almacenamiento, permitiendo que los desarrolladores se concentren en la lógica de la aplicación sin preocuparse por la infraestructura subyacente."
+               data-features="Control Total, Seguridad, Personalización, Costos Fijos"
+               data-image="img/FaaS.png" onclick="showDetails(this)">
+                <img src="img/FaaS.png" alt="On-Premises">
+                <h3 class="images-title-2">FaaS</h3>
+            </a>
+            
+            </div>
+        </div>
+    </section>
+
+        
+    <div class="container-final">
+            <h1 class="titulo-3">TIPOS DE RECURSOS</h1>
+        <section class="content">
+            <div class="section">
+                <img src="img/compute.png" alt="AWS" class="section-image">
+                <div class="section-text">
+                    <h2 class="titulo-2">Computo</h2>
+                    <p>AWS proporciona una variedad de servicios de cómputo, como Amazon EC2, que permite a los usuarios ejecutar aplicaciones en instancias virtuales escalables. EC2 proporciona una capacidad de cómputo segura y redimensionable en la nube, lo que facilita la escalabilidad y el manejo de cargas de trabajo variables. Otros servicios de cómputo incluyen AWS Lambda, que permite ejecutar código sin aprovisionar ni gestionar servidores, y Amazon ECS para la gestión de contenedores.</p>
+                </div>
+            </div><hr class="separador">
+            <div class="section">
+                <img src="img/storage.png" alt="Implementation" class="section-image">
+                <div class="section-text">
+                    <h2 class="titulo-2">Almacenamiento</h2>
+                    <p>AWS ofrece soluciones de almacenamiento escalables y seguras para respaldar datos de cualquier tipo. Amazon S3 es uno de los servicios de almacenamiento más populares, proporcionando almacenamiento de objetos con alta durabilidad y disponibilidad. Amazon EBS ofrece almacenamiento en bloque para usar con instancias EC2. AWS también proporciona soluciones de almacenamiento de archivos como Amazon EFS, que permite compartir almacenamiento entre múltiples instancias EC2.</p>
+                </div>
+            </div><hr class="separador">
+            <div class="section">
+                <img src="img/networking.svg" alt="Worth It" class="section-image">
+                <div class="section-text">
+                    <h2 class="titulo-2">redes</h2>
+                    <p>La infraestructura de redes de AWS incluye servicios como Amazon VPC, que permite a los usuarios crear redes virtuales aisladas dentro de la nube de AWS. Otros servicios importantes son AWS Direct Connect, que establece una conexión de red dedicada entre las instalaciones del cliente y AWS, y Amazon Route 53, un servicio DNS escalable y de alta disponibilidad. Estos servicios permiten una integración segura y eficiente de las redes locales con la nube de AWS.</p>
+                </div>
+            </div><hr class="separador">
+            <div class="section">
+                <img src="img/software.png" alt="Coding" class="section-image">
+                <div class="section-text">
+                    <h2 class="titulo-2">Software</h2>
+                    <p>AWS proporciona una amplia gama de servicios de software para apoyar el desarrollo, la implementación y la gestión de aplicaciones. Amazon RDS ofrece bases de datos relacionales gestionadas. AWS Elastic Beanstalk facilita la implementación y escalado de aplicaciones web y servicios desarrollados con Java, .NET, PHP, Node.js, Python, Ruby, Go y Docker. Además, AWS proporciona herramientas de desarrollo como AWS CodeCommit, CodeBuild, CodeDeploy y CodePipeline para integrar y entregar código de manera continua.</p>
+                </div>
+            </div>
+        </section>
+    </div>    
+
+    <div class="conteiner-button">
+        <div class="sitio-oficial">
+            <h3>Visita al sitio web oficial de AWS</h3>
+            <button><a href="https://aws.amazon.com/es/free/?gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP42JGCD_mYtrr4yQ8L962h8Snh9CAuicoZUXExytILwTw-ttstLCx4aAljgEALw_wcB&trk=21d55203-2d12-48c4-91d5-cbc6182ad523&sc_channel=ps&ef_id=Cj0KCQjw-ai0BhDPARIsAB6hmP42JGCD_mYtrr4yQ8L962h8Snh9CAuicoZUXExytILwTw-ttstLCx4aAljgEALw_wcB:G:s&s_kwcid=AL!4422!3!648113982956!e!!g!!amazon%20web%20services!19666157740!144629913766&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all" target="_blank">Ir al sitio oficial de AWS</a></button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100088579052568" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/detodofut_tw" target="_blank"><i class="fa-solid fa-x"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-sansberro-pereyra-a50a1329a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="certificaciones.html">Certificaciones</a></li>
+                    <li><a href="bloc.html">Bloc</a></li>
+                    <li><a href="tutoriales.html">tutoriales</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p> <span class="designer">Juan Sansberro</span></p>
+        </div>
+    </footer>
+
+    
+    <script src="script.js">
+
+            function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+    }
+    </script>
+
+    <script src="ia.js"></script>
+</body>
+</html>

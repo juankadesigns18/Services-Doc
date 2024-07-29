@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Services</title>
+    <link rel="stylesheet" href="otros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/8.3.0/docx.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="aws">
+            <a href="index.html"><img src="images/logoaws2.png" alt=""></a>
+            <div class="logo">Services.</div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="certificaciones.html">Certificaciones</a></li>
+                <li><a href="bloc.html">Bloc</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>  
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1 id="typewriter-text">AWS Services</h1>
+            <input type="text" id="searchService" placeholder="Buscar Servicio">
+            <div id="serviceList" class="service-list">
+                <!-- Lista de servicios -->
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="repasar">
+                <h1>Bloc Services</h1>
+            </div><hr class="separate">
+            <h3>⇓ Arrasta tus servicios debajo ⇓</h3>
+            <div class="reference-area">
+                <!-- Área de referencia -->
+            </div>
+            <div class="note-area">
+                <h2 id="noteTitle" contenteditable="true">Título</h2>
+                <textarea id="notes" placeholder="Escribe tus notas aquí..."></textarea>
+                <div class="pagination">
+                    <button id="prevPage">&lt;</button>
+                    <span id="pageNumber">Página 1</span>
+                    <button id="nextPage">&gt;</button>
+                </div>
+            </div>
+            <div class="buttons-download">
+                <button id="downloadPDF">Descargar PDF</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/profile.php?id=100088579052568" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/detodofut_tw" target="_blank"><i class="fa-solid fa-x"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-sansberro-pereyra-a50a1329a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul><li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="certificaciones.html">Certificaciones</a></li>
+                    <li><a href="bloc.html">Bloc</a></li>
+                    <li><a href="tutoriales.html">tutoriales</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footerBottom">
+            <p><span class="designer">Juan Sansberro</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+    
+function closeDetails() {
+    document.body.style.overflow = 'auto';
+    document.getElementById('overlay').style.display = 'none';
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const { jsPDF } = window.jspdf;
+
+            document.getElementById('downloadPDF').addEventListener('click', function() {
+                const doc = new jsPDF();
+                const pageHeight = doc.internal.pageSize.height;
+                const lineHeight = 10;
+                const margin = 10;
+                let cursorY = margin;
+
+                const title = document.getElementById('noteTitle').innerText;
+                const notes = document.getElementById('notes').value;
+
+                // Agregar título al PDF
+                doc.text('', margin, cursorY);
+                cursorY += lineHeight;
+
+                doc.text('' + title, margin, cursorY);
+                cursorY += lineHeight;
+
+                // Agregar notas al PDF, dividiendo el texto en líneas
+                const splitNotes = doc.splitTextToSize(notes, doc.internal.pageSize.width - margin * 2);
+
+                splitNotes.forEach(line => {
+                    if (cursorY + lineHeight > pageHeight - margin) {
+                        doc.addPage();
+                        cursorY = margin;
+                    }
+                    doc.text(line, margin, cursorY);
+                    cursorY += lineHeight;
+                });
+
+                // Descargar el PDF
+                doc.save('pagina.pdf');
+            });
+        });
+    </script> 
+</body>
+</html>

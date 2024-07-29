@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Services</title>
+    <link rel="stylesheet" href="ia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="aws">
+            <a href="index.html"><img src="images/logoaws2.png" alt=""></a>
+            <div class="logo" >Serivces.</div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="certificaciones.html">Certificaciones</a></li>
+                <li><a href="bloc.html">Bloc</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>  
+            </ul>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <section id="home">
+    <div class="hero">
+      <h1>Conoce todas las certificaciones oficiales de AWS</h1>
+      <p>Explora y aprende sobre como certificarte en aws</p>
+      <button class="scroll-button"><a href="#container">Ver Certificaciones</a></button>
+    </div>
+    </section>
+  <div class="container" id="container">
+    
+    <!-- Primera fila -->
+    <div class="row">
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-cloud-practitioner/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certitication-cloudpractitioner.png" alt="Certification Cloud Practitioner"></a></div>
+    </div>
+    <!-- Segunda fila -->
+    <div class="row">
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-solutions-architect-associate/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certification-solutions-azul.png" alt="Certification Solutions Azul"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-developer-associate/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certification-developer.png" alt="Certification Developer"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-sysops-admin-associate/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certification-sysops-administrator.png" alt="Certification SysOps Administrator"></a></div>
+    </div>
+    <!-- Tercera fila -->
+    <div class="row">
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-solutions-architect-professional/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certification-solutions.png" alt="Certification Solutions"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-devops-engineer-professional/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certification-devops.png" alt="Certification DevOps"></a></div>
+    </div>
+    <!-- Cuarta fila -->
+    <div class="row">
+        <div class="item"><a href="https://aws.amazon.com/blogs/training-and-certification/category/sap/" target="_blank"><img src="img/certifcate-sap-on-aws.png" alt="Certificate SAP on AWS"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-advanced-networking-specialty/?ch=sec&sec=rmg&d=1" target="_blank"><img src="img/certificate-advancer-networking.png" alt="Certificate Advanced Networking"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/training/classroom/exam-readiness-aws-certified-database-specialty/" target="_blank"><img src="img/certificate-database.png" alt="Certificate Database"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-machine-learning-specialty/" target="_blank"><img src="img/certificate-machine-learning.png" alt="Certificate Machine Learning"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/es/certification/certified-security-specialty/" target="_blank"><img src="img/certification-security.png" alt="Certification Security"></a></div>
+        <div class="item"><a href="https://aws.amazon.com/training/learn-about/data-analytics/" target="_blank"><img src="img/certification-data-analytics.png" alt="Certification Data Analytics"></a></div>
+    </div>
+</div>
+<br>
+      
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/profile.php?id=100088579052568" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/detodofut_tw" target="_blank"><i class="fa-solid fa-x"></i></a>
+            <a href="https://www.linkedin.com/in/juan-manuel-sansberro-pereyra-a50a1329a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul><li><a href="index.html">Inicio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="certificaciones.html">Certificaciones</a></li>
+                <li><a href="bloc.html">Bloc</a></li>
+                <li><a href="nose.html">Tutoriales</a></li>  
+            </ul>
+        </div>
+        
+    </div>
+    <div class="footerBottom">
+        <p><span class="designer">Juan Sansberro</span></p>
+    </div>
+</footer>
+
+    <script src="ia.js">
+
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+
+    </script>
+</body>
+</html>
