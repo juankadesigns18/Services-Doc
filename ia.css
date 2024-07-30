@@ -487,7 +487,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(ima/fondo-3.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
     color: #fff;
     text-align: center;
     padding: 0 20px;
@@ -696,7 +696,7 @@ h2 {
 
 .fondo-primer{
     position: relative;
-    background-image: url(ima/fondo-3.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
     padding-top: 120px;
     padding-bottom: 120px;
     overflow: hidden;
