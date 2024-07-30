@@ -140,7 +140,7 @@ body.dark-mode nav ul li a {
 .hero {
     text-align: center;
     padding: 50px;
-    background-image: url(ima/fondo-3.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
     background-size: cover;
 }
 
@@ -170,7 +170,7 @@ body.dark-mode nav ul li a {
 body.dark-mode .hero {
     background-color: #1e1e1e;
     color: #ffffff;
-    background-image: url(ima/fondo-3-dark.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3-dark.png);
     background-size: cover;
 }
 
@@ -210,7 +210,7 @@ body.dark-mode .hero {
     width: 100%;
     max-width: 830px; 
     padding: 10px;
-    background-image: url(ima/fondo-3.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
     background-size: cover;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -251,7 +251,7 @@ body.dark-mode .hero {
 body.dark-mode .category-selector {
     background-color: #2e2e2e;
     border: 3px solid #000000;
-    background-image: url(ima/fondo-3-dark.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3-dark.png);
     background-size: cover;
 }
 
@@ -483,7 +483,7 @@ body.dark-mode {
         align-items: center; /* Centra los elementos verticalmente */
         padding: 15px; /* Ajusta el padding para un mejor espaciado */
         margin: 20px 0; /* Ajusta el margen para espacio alrededor */
-        background-image: url(ima/fondo-3.jpg); /* Mantiene la imagen de fondo */
+        background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg); /* Mantiene la imagen de fondo */
         border: 3px solid #000000; /* Mantiene el borde */
         border-radius: 5px; /* Mantiene los bordes redondeados */
         max-width: 50%; /* Asegura que el contenedor no exceda el 90% del ancho del viewport */

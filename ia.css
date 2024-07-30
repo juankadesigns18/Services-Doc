@@ -487,7 +487,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/https://bucket-juan.s3.amazonaws.com/ima/fondo-3.jpg);
     color: #fff;
     text-align: center;
     padding: 0 20px;
@@ -498,7 +498,7 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(ima/fondo-3-dark.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3-dark.png);
     color: #fff;
     text-align: center;
     padding: 0 20px;
@@ -704,7 +704,7 @@ h2 {
 
 .dark-mode .fondo-primer{
     position: relative;
-    background-image: url(ima/fondo-3-dark.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-3-dark.png);
     padding-top: 120px;
     padding-bottom: 120px;
     overflow: hidden;
@@ -1134,7 +1134,7 @@ body.no-scroll {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(ima/fondo-2.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-2.jpg);
     background-size: cover;
     background-position: center;
     filter: blur(10px); /* Aplica el desenfoque */
@@ -1149,7 +1149,7 @@ body.no-scroll {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(ima/fondo-2.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-2.jpg);
     background-size: cover;
     background-position: center;
     filter: blur(10px); /* Aplica el desenfoque */
@@ -1519,7 +1519,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(ima/fondo-4.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-4.jpg);
     background-size: cover;
     filter: blur(10px); /* Aplica el desenfoque */
     z-index: 0; /* Asegura que el pseudo-elemento esté detrás del contenido */
@@ -1581,52 +1581,52 @@ span{
 }
 
 .ec2{
-    background-image: url(ima/ec2-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/ec2-fondo.png);
     background-size: cover;
 }
 
 .s3{
-    background-image: url(ima/s3-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/s3-fondo.png);
     background-size: cover;
 }
 
 .rds{
-   background-image: url(ima/rds-fondo.png);
+   background-image: url(https://bucket-juan.s3.amazonaws.com/ima/rds-fondo.png);
     background-size: cover;
 }
 
 .lambda{
-    background-image: url(ima/ec2-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/ec2-fondo.png);
     background-size: cover;
 }
 
 .vpc{
-    background-image: url(ima/vpc-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/vpc-fondo.png);
     background-size: cover;
 }
 
 .dynamodb{
-    background-image: url(ima/rds-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/rds-fondo.png);
     background-size: cover;
 }
 
 .cloudfront{
-    background-image: url(ima/vpc-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/vpc-fondo.png);
     background-size: cover;
 }
 
 .sqs{
-    background-image: url(ima/sqs-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/sqs-fondo.png);
     background-size: cover;
 }
 
 .redshift{
-    background-image: url(ima/vpc-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/vpc-fondo.png);
     background-size: cover;
 }
 
 .elastic-beanstalk{
-    background-image: url(ima/ec2-fondo.png);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/ec2-fondo.png);
     background-size: cover;
 }
 
@@ -2039,7 +2039,7 @@ h6{
     margin: auto;
     padding-left: 100px;
     padding-right:100px;
-    background-image: url(ima/fondo-6.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-6.jpg);
     overflow: hidden;  
     border-top: 2px solid #ff5100; 
     border-bottom: 2px solid #ff5100; 
@@ -2052,7 +2052,7 @@ h6{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(ima/fondo-6.jpg);
+    background-image: url(https://bucket-juan.s3.amazonaws.com/ima/fondo-6.jpg);
     background-size: cover;
     filter: blur(15px); /* Aplica el desenfoque */
     z-index: 0; /* Asegura que el pseudo-elemento esté detrás del contenido */
